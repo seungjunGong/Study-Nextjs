@@ -1,3 +1,5 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Link from 'next/link'
 import "./layout.css"
 
@@ -10,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Header/>
       <nav>
         <ul>
           <li>
@@ -27,6 +30,7 @@ export default function RootLayout({ children }) {
         </ul>
       </nav>
         {children}
+        <Footer/>
         </body>
     </html>
   )

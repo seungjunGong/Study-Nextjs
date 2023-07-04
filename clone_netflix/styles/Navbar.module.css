@@ -1,0 +1,35 @@
+.nav {
+    background-color: black;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ul li {
+    padding-left: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    font-size: 0.9rem;
+    /* 원하는 글자 크기로 변경하세요 */
+}
+
+.img {
+    width: 6rem;
+    /* 원하는 가로 크기로 변경하세요 */
+    height: auto;
+    /* 높이를 자동으로 조절하도록 설정합니다 */
+}

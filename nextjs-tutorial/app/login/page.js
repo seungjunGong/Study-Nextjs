@@ -1,5 +1,6 @@
 "use client"; 
 import { useState } from 'react';
+import Button from '../../components/Button';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -29,6 +30,7 @@ export default function Login() {
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
+        <Button onClick={handleSubmit}>클릭해주세요</Button>
         <button type="submit">로그인</button>
       </form>
     </div>
