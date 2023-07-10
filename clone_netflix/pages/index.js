@@ -1,17 +1,13 @@
-import Head from "next/head";
 import axios from "axios";
 import MovieList from "../components/MovieList";
+import Navbar from "../components/navbar";
 
 export default function Home(props) {
   const { posters } = props;
 
   return (
     <div>
-      <Head>
-        <title>clone netflix</title>
-        <meta name="description" content="Clone by netflix app" />
-        <link rel="icon" href="/ic_netflix.png" />
-      </Head>
+      <Navbar />
       <iframe
         width="100%"
         height="600"

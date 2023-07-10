@@ -1,0 +1,124 @@
+.background {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-image: url('/netflix_background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10rem;
+    z-index: 0;
+    filter: brightness(100%);
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.container {
+    width: 28rem;
+    height: 38rem;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.field {
+    position: relative;
+}
+
+.field input {
+    background: #333333;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0 0 20px;
+    outline: none;
+}
+
+.field input:focus~.floating_label {
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.field input:not(:focus):valid~.floating_label {
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.field input.invalid {
+    border-bottom: 2px solid orangered;
+}
+
+.floating_label {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 18px;
+    transition: 0.2s ease all;
+    color: #989897;
+}
+
+.signin_btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 5px;
+    border: none;
+    background: #db202c;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.action_group {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #989897;
+    font-size: 13px;
+}
+
+.q1 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #989897;
+}
+
+.q2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #989897;
+    font-size: 0.8rem;
+}

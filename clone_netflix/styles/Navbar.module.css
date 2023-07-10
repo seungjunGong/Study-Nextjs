@@ -27,6 +27,22 @@
     /* 원하는 글자 크기로 변경하세요 */
 }
 
+.login {
+    background-color: red;
+    color: white;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    position: absolute;
+    right: 0;
+    width: 4.5rem;
+    margin-right: 2rem;
+    height: 2rem;
+    border: 0.2rem;
+}
+
 .img {
     width: 6rem;
     /* 원하는 가로 크기로 변경하세요 */
